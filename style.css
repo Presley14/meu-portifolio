@@ -1,0 +1,254 @@
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #000000;
+    color: white;
+}
+
+header{
+    background-color: #000000;
+    color: rgb(241, 241, 241);
+    padding: 5px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+main{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height:100% -50px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 25px;
+}
+
+.titulo_nav{
+  padding: 20px 25px;
+}
+
+.li{
+  padding: 10px 25px;
+}
+
+.li:hover{
+  background-color: #422244;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+a{
+    text-decoration: none;
+    color: rgb(200, 120, 17);
+}
+
+#inicio{
+    display: flex;
+    background: radial-gradient(circle at center, #1f0c1f, #000000);
+    color: white;
+    padding: 135px 0;
+    scroll-margin-top: 4rem; /* usado quando tiver links na mesma pagina para que fique na margem correta do menu(header)*/
+}
+
+.esquerda{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.caixa_animacao{
+}
+
+.direita{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.descricao{
+    font-size: 40px;
+    color: #813587;
+}
+
+.image{
+    width: 450px;
+}
+
+.maisobre{
+    padding: 10px 15px;
+    border: 2px solid #422244;
+    border-radius: 25px;
+    display: block;
+    width: 115px;
+    margin-top: 10px;
+}
+
+.maisobre:hover{
+    background-color: #422244;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.animacao {
+    position: relative;
+    font-size: 40px;
+    color: darkorange;
+  }
+  
+.animacao::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    background-image: linear-gradient(to left, #b208be74, #5070a11a);
+    animation: aparecer 10s linear infinite;
+    border-radius: 5px;
+
+}
+
+@keyframes aparecer {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+  footer{
+    background-color: black ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+  }
+
+  /*habilidade*/
+  #habilidades {
+    background: radial-gradient(circle at center, #422244, #000000);
+    scroll-margin-top: 4rem;
+    height: 300px;
+  }
+
+  .habilidade {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: block;
+    margin: 20px 15px;
+    
+  }
+
+  .m_h {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .label_habilidade{
+    color: aliceblue;
+    margin-top: 40px;
+  }
+
+  .caixa_habi{
+    display: block;
+    margin: 0 5px;
+    width: 130px;
+    height: 130px;
+  }
+  
+/* sobre */
+
+  #sobre{
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin: auto;
+    left: auto;
+    background-color: #e1a2ec;
+    padding: 25px;
+    border-radius: 15px;
+    color: #000000;
+    scroll-margin-top: 5rem;
+  }
+
+  .mim{
+    background-color: #e1a2ec;
+    width: 70%;
+    margin: auto;
+    left: auto;
+    
+
+  }
+
+  h3{
+  }
+
+  .paragrafo{
+    margin-top: 20px;
+    
+  }
+
+  .assinado{
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    margin-top: 20px;
+  }
+
+  /* contatos */
+
+  #contato{
+    padding: 20px;
+    scroll-margin-top: 4rem;
+  }
+
+  .redes{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+
+  .rede{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+  }
+
+  .texto_contato{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #projetos{
+    scroll-margin-top: 4rem;
+  }
+  
