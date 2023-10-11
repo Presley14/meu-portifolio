@@ -10,7 +10,8 @@ body{
 }
 
 header{
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background-color: #8c009f;
     color: rgb(241, 241, 241);
     padding: 5px 0px;
     position: fixed;
@@ -33,20 +34,26 @@ nav{
     flex-wrap: wrap;
 }
 
+
 .lista{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 10px 25px;
 }
 
 .titulo_nav{
-  padding: 20px 25px;
+  padding: 10px 25px;
+  font-family: 'Black Ops One', sans-serif;
+  font-size: 26px;
 }
 
 .li{
   padding: 10px 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .li:hover{
@@ -56,11 +63,12 @@ nav{
 }
 a{
     text-decoration: none;
-    color: rgb(200, 120, 17);
+    color: white;
 }
 
 #inicio{
     display: flex;
+    /*background: radial-gradient(circle at center, #1f0c1f, #000000);*/
     background: radial-gradient(circle at center, #1f0c1f, #000000);
     color: white;
     padding: 135px 0;
@@ -85,7 +93,20 @@ a{
 
 .descricao{
     font-size: 40px;
-    color: #813587;
+    color: #f7f7f7;
+    font-family: 'Black Ops One', sans-serif;
+}
+
+.sou{
+    display: flex;
+    font-size: 40px;
+    color: #f7f7f7;
+    font-family: 'Black Ops One', sans-serif;
+    margin-right: 10px;
+}
+
+.uniao{
+  display: flex;
 }
 
 .image{
@@ -94,7 +115,7 @@ a{
 
 .maisobre{
     padding: 10px 15px;
-    border: 2px solid #422244;
+    border: 2px solid #8c009f;
     border-radius: 25px;
     display: block;
     width: 115px;
@@ -102,7 +123,7 @@ a{
 }
 
 .maisobre:hover{
-    background-color: #422244;
+    background-color: #8c009f;
     padding: 10px 15px;
     border-radius: 25px;
 }
@@ -111,6 +132,7 @@ a{
     position: relative;
     font-size: 40px;
     color: darkorange;
+    font-family: 'Black Ops One', sans-serif;
   }
   
 .animacao::after {
@@ -118,7 +140,7 @@ a{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 40px;
+    height: 50px;
     background-image: linear-gradient(to left, #b208be74, #5070a11a);
     animation: aparecer 10s linear infinite;
     border-radius: 5px;
@@ -141,8 +163,8 @@ a{
 
   /*habilidade*/
   #habilidades {
-    background: radial-gradient(circle at center, #422244, #000000);
-    scroll-margin-top: 4rem;
+    background: radial-gradient(circle at center, #8c009f, #000000);
+    scroll-margin-top: 10rem;
     height: 300px;
   }
 
@@ -225,6 +247,9 @@ a{
   #contato{
     padding: 20px;
     scroll-margin-top: 4rem;
+    margin-top: 40px;
+    background: radial-gradient(circle at center, #8c009f, #000000);
+    scroll-margin-top: 10rem;
   }
 
   .redes{
@@ -252,3 +277,60 @@ a{
     scroll-margin-top: 4rem;
   }
   
+  /* footer*/
+
+  #footer{
+    margin: 50px 0px;
+    
+  }
+
+
+/* Projetos */
+
+#projetos{
+  margin-top: 100px;
+  scroll-margin-top: 10rem;
+}
+
+.projeto{
+  display: flex;
+  justify-content: center;
+  margin: 10px 10px  100px 10px;
+}
+
+.texto_card{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card_projeto{
+  padding: 20px;
+}
+
+.titulo_card{
+  display: flex;
+  background-color: #8c009f;
+  padding: 20px 30px;
+  border-radius: 5px 5px 0 0 ;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologias{
+  background-color: #e1a2ec;
+  color: #000000;
+  padding: 5px 10px;
+  border-radius:  0 0 5px 5px;
+}
+
+.lista_card{
+  background-color: darkorange;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+.list{
+  color: #422244;
+}

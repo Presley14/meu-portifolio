@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presley Oliveira</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Carter+One&family=Slackey&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a class="titulo_nav">Presley Oliveira</a>
+            <a class="titulo_nav">PRESLEY OLIVEIRA</a>
             <ul class="lista">
-                <li class="li"><a href="#inicio">Início</a></li>
-                <li class="li"><a href="#habilidades">Habilidades</a></li>
-                <li class="li"><a href="#projetos">Projetos</a></li>
-                <li class="li"><a href="#sobre">Sobre</a></li>
-                <li class="li"><a href="#contato">Contato</a></li>
+                <a href="#inicio"><li class="li">Início</li></a>
+                <a href="#habilidades"><li class="li">Habilidades</li></a>
+                <a href="#projetos"><li class="li">Projetos</li></a>
+                <a href="#sobre"><li class="li">Sobre</li></a>
+                <a href="#contato"><li class="li">Contato</li></a>
             </ul>
         </nav>
     </header>
@@ -23,8 +25,12 @@
         <div id="inicio">
             <div class="esquerda">
                 <div class="caixa_animacao">
-                    <p class="descricao">Oi! Meu nome è Presley e sou</p>
-                    <p class="animacao">Programador web.</p>
+                    <p class="descricao">OI! MEU NOME É PRESLEY. </p>
+                    <div class="uniao">
+                        <p class="sou">SOU</p>
+                        <p class="animacao">PROGRAMADOR WEB.</p>
+                    </div>
+                    
                     <a class="maisobre" href="#sobre">Mais sobre mim</a>
                 </div>
             </div>
@@ -33,7 +39,7 @@
             </div>
         </div>
         <div id="habilidades">
-            <h3 class="m_h">Minhas habilidades.</h3>
+            <h3 class="m_h">Minhas habilidades</h3>
             <div class="carousel">
                 <ul class="ul">
                     <div class="caixa_habi">
@@ -67,7 +73,41 @@
                 </ul>
             </div>
         </div>
-        <div id="projetos">Projetos</div>
+        <div id="projetos">
+            <div>
+                <h3 class="texto_card">Projetos</h3>
+                <div class="projeto">
+                    <div class="card_projeto">
+                        <div class="titulo_card">
+                            <h3 >Meu Portifólio</h3>
+                            <a href="https://github.com/Presley14/meu-portifolio" target="_blank"><img class="redes" src="image/github.png"></a> 
+                        </div>
+                        <h3 class="tecnologias">Tecnologias usadas</h3>
+                            <div class="lista_card">
+                                <p class="list">HTML</p>
+                                <p class="list">CSS</p>
+                                <p class="list">JavaScript</p> 
+                            </div>
+                    </div>
+                    <div class="card_projeto">
+                        <div class="titulo_card">
+                            <h3 >Lista de tarefas</h3>
+                            <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
+                        </div>
+                        <h3 class="tecnologias">Tecnologias usadas</h3>
+                            <div class="lista_card">
+                                <p class="list">HTML</p>
+                                <p class="list">CSS</p>
+                                <p class="list">React</p>
+                                <p class="list">Node-JS</p>
+                                <p class="list">mySQL</p> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
         <div id="sobre">
             <section class="mim">
                 <h3>
@@ -75,7 +115,7 @@
                 </h3>
                 <p class="paragrafo">&nbsp;&nbsp;
                     Oi, meu nome é <strong>Elvis Presley</strong>, faço bacharelado em Engenharia de Software. Sou um entusiasta da 
-                    programação com habilidades e experiência nas tecnologias <strong>CSS, JavaScript, React, 
+                    programação com habilidades e experiência nas tecnologias <strong>HTML, CSS, JavaScript, React, 
                     Node-JS, mySQL.</strong>  Dedico meu tempo a aprimorar minhas habilidades e construir projetos pessoais 
                     para desenvolver meu conhecimento prático.
                 </p>
@@ -117,15 +157,14 @@
             <h3 class="texto_contato">Que tal entrar em contato comigo pelas minhas redes sociais ?!</h3>
             <div>
                 <ul class="rede">
-                    <li><img class="redes" src="image/github.png"></li>
-                    <li><img class="redes" src="image/linkedin.png"></li>
-                    <li><img class="redes" src="image/ins.jpg"></li>
+                    <li><a href="https://github.com/Presley14" target="_blank"><img class="redes" src="image/github.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/presley-oliveira-811603249/" target="_blank"><img class="redes" src="image/linkedin.png"></a></li>
                 </ul>
             </div>
         </div>
     </main>
-    <footer>
-        <p>&copy; Site criado por Presley Oliveira 2023</p>
+    <footer id="footer">
+        <p>&copy; Site criado por Presley Oliveira 2023.</p>
     </footer>
     <script src="script.js"></script>
 </body>
