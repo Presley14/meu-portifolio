@@ -1,0 +1,430 @@
+@charset "UTF-8";
+
+*{
+    font-size: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media screen and (min-width:30px) and (max-width:728px){
+    
+    body{
+        background-color: #000000;
+        color: white;
+    }
+
+    header{
+        /*background-color: #000000;*/
+        background-color: #8c009f;
+        color: rgb(241, 241, 241);
+        padding: 5px 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    main{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        height:100% -50px;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .img{
+        padding-left: 50px;
+        position:relative;
+        display: block;
+    }
+
+    .img_x{
+        display: none;
+    }
+
+    .lista{
+        display: none;
+    }
+    #menu{
+        display: none;
+        border-radius: 8px;
+        position: fixed;
+    }
+
+    .li{
+        padding: 20px;
+        color: #f7f7f7;
+    }
+
+    .li:hover{
+        background-color: #8c009f;
+    }
+
+    .lista-menu{
+        background-color: #1f0c1f;
+        display: block;
+        position: absolute;
+        top: 70px;
+        width: 340px;
+        height: 70vh;
+        margin-left: 10px;
+        list-style: none;
+        padding-top: 30px;
+    }
+
+    .lista-menu a{
+        text-decoration: none;
+    }
+
+    .titulo_nav{
+        padding: 15px 15px;
+        font-family: 'Black Ops One', sans-serif;
+        font-size: 22px;
+      }
+
+      #inicio{
+        margin-top: 70px;
+        display: flex;
+        /*background: radial-gradient(circle at center, #1f0c1f, #000000);*/
+        background: radial-gradient(circle at center, #1f0c1f, #000000);
+        color: white;
+        padding: 100px 0;
+        scroll-margin-top: 4rem;
+        align-items: center;
+        justify-content: center;
+      }
+
+    .direita{
+        display: none;
+    }
+
+    .esquerda{
+        display: flex;
+    }
+
+    .descricao{
+        font-size: 20px;
+        color: #f7f7f7;
+        font-family: 'Black Ops One', sans-serif;
+    }
+
+    .uniao{
+        display: flex;
+      }
+
+    .sou{
+        display: flex;
+        font-size: 20px;
+        color: #f7f7f7;
+        font-family: 'Black Ops One', sans-serif;
+        margin-right: 10px;
+    }
+
+    .animacao {
+        position: relative;
+        font-size: 20px;
+        color: darkorange;
+        font-family: 'Black Ops One', sans-serif;
+      }
+
+      .animacao::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 25px;
+        background-image: linear-gradient(to left, #b208be74, #5070a11a);
+        animation: aparecer 10s linear infinite;
+        border-radius: 5px;
+    }
+
+    @keyframes aparecer {
+        0% { width: 0; }
+        50% { width: 100%; }
+        100% { width: 0; }
+    }
+
+    .maisobre{
+        padding: 7px 10px;
+        border: 2px solid #8c009f;
+        border-radius: 25px;
+        display: block;
+        width: 120px;
+        margin-top: 10px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    .maisobre:hover{
+        background-color: #8c009f;
+        padding: 7px 10px;
+        border-radius: 25px;
+    }
+
+     /*habilidade*/
+   #habilidades {
+    background: radial-gradient(circle at center, #8c009f, #000000);
+    scroll-margin-top: 10rem;
+    height: 360px;
+    padding: 30px 0;
+  }
+
+  .habilidade {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    margin: 10px 15px;
+  }
+
+  .caixa_habi{
+    display: block;
+    margin: 0 5px;
+    width: 80px;
+    height: 80px;
+    margin-bottom:40px;
+  }
+
+  .ul{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+
+  .label_habilidade{
+    color: aliceblue;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .m_h {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  /* Projetos */
+
+#projetos{
+    margin-top: 100px;
+    scroll-margin-top: 10rem;
+    background: radial-gradient(circle at center, #1f0c1f, #000000);
+    height: 200px;
+    margin-bottom: 100px;
+    padding-bottom: 180px;
+
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+  }
+  .projeto{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px  100px 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .texto_card{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+  }
+
+  .card_projeto{
+    margin: 0px 10px;
+    padding: 20px;
+
+    flex: 0 0 auto;
+    min-width: 300px; /* Largura de cada card de projeto */
+    margin-right: 20px; /* Espaçamento entre os cards */
+    scroll-snap-align: start;
+    border: 1px solid #ccc; /* Adicione uma borda para destacar os cards */
+    background-color: #f9f9f9; /* Cor de fundo dos cards */
+    border-radius: 8px; /* Borda arredondada */
+  }
+
+  
+  .card_projeto:hover{
+    box-shadow: 0px 0px 2px 0px rgb(255, 173, 72);
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  
+    .redes{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    .redes:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+    }
+  .titulo_card{
+    display: flex;
+    background-color: #8c009f;
+    padding: 20px 30px;
+    border-radius: 5px 5px 0 0 ;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo_card h3{
+    font-size: 16px;
+  }
+
+  
+  .tecnologias{
+    background-color: #e1a2ec;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius:  0 0 5px 5px;
+    font-size: 16px;
+  }
+  
+  .tecnologias:hover{
+    background-color: #422244;
+    color: #f7f7f7;
+    border-radius: 0px;
+  }
+  
+  .lista_card{
+    background-color: darkorange;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0 0 5px 5px;
+    display: none;
+    box-shadow: 0px 0px 5px 0px rgb(255, 173, 72);
+  }
+  
+  .list{
+    color: #422244;
+    font-size: 12px;
+  }
+  
+  .tecnologias:hover ~ .lista_card {
+    display: block;
+    }
+
+    
+
+
+
+    .nav-btn {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+
+
+    /* sobre */
+
+  #sobre{
+    display: block;
+    text-align: justify;
+    width: 90%;
+    margin: auto;
+    left: auto;
+    background-color: #e1a2ec;
+    padding: 15px;
+    border-radius: 15px;
+    color: #000000;
+    scroll-margin-top: 5rem;
+  }
+
+  .mim{
+    background-color: #e1a2ec;
+    width: 95%;
+    margin: auto;
+    left: auto;
+
+  }
+
+  .paragrafo{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .assinado{
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  /* contatos */
+
+  #contato{
+    padding: 20px;
+    scroll-margin-top: 4rem;
+    margin-top: 40px;
+    background: radial-gradient(circle at center, #8c009f, #000000);
+    scroll-margin-top: 10rem;
+  }
+
+  .redes{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+  }
+
+  .redes:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px 0px black;
+  }
+
+  .rede{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 20px;
+  }
+
+  .texto_contato{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #projetos{
+    scroll-margin-top: 4rem;
+  }
+
+  /* footer*/
+
+  #footer{
+    margin: 50px 0px;
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+}

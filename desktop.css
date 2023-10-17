@@ -37,6 +37,14 @@ nav{
     flex-wrap: wrap;
 }
 
+.img{
+    display: none;
+}
+
+.lista-menu{
+  display: none;
+}
+
 
 .lista{
     display: flex;
@@ -85,9 +93,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: left;
-}
-
-.caixa_animacao{
 }
 
 .direita{
@@ -149,7 +154,7 @@ a{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 50px;
+    height: 40px;
     background-image: linear-gradient(to left, #b208be74, #5070a11a);
     animation: aparecer 10s linear infinite;
     border-radius: 5px;
@@ -234,9 +239,6 @@ a{
     left: auto;
     
 
-  }
-
-  h3{
   }
 
   .paragrafo{
