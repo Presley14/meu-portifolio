@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presley Oliveira</title>
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
-    <link rel="stylesheet" href="tablet.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (min-width:300px) and (max-width:728px)">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Carter+One&family=Slackey&display=swap" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@
             <a href="#inicio" class="titulo_nav">PRESLEY OLIVEIRA</a>
             <img class="img" id="img_menu" onclick="menuClick()"  src="/image/menu.png" width="50px" height="50px" alt="Menu">
             <img class="img_x" id="img_x" onclick="menuClick()"  src="/image/outra_imagem.png" width="50px" height="50px" alt="Menu">
-            <menu id="menu">
+            <menu id="menu" onclick="sairMenu()">
                 <ul class="lista-menu">
                     <a href="#inicio"><li class="li">Início</li></a>
                     <a href="#habilidades"><li class="li">Habilidades</li></a>
