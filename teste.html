@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carrossel-container">
+        <button class="nav-btn" id="prev-btn">anterior</button>
+        <div class="carrossel">
+          <div class="card">
+            <img src="image/css.jpg" alt="Imagem 1">
+          </div>
+          <div class="card">
+            <img src="image/git.jpg" alt="Imagem 2">
+          </div>
+          <div class="card">
+            <img src="image/html.jpg" alt="Imagem 3">
+          </div>
+          <div class="card">
+            <img src="image/Ins.jpg" alt="Imagem 4">
+          </div>
+          <div class="card">
+            <img src="image/linkedin.png" alt="Imagem 5">
+          </div>
+          <div class="card">
+            <img src="image/js.png" alt="Imagem 6">
+          </div>
+          <div class="card">
+            <img src="image/mysql.jpg" alt="Imagem 7">
+          </div>
+          <div class="card">
+            <img src="image/css.jpg" alt="Imagem 1">
+          </div>
+          <div class="card">
+            <img src="image/git.jpg" alt="Imagem 2">
+          </div>
+          <div class="card">
+            <img src="image/html.jpg" alt="Imagem 3">
+          </div>
+          <div class="card">
+            <img src="image/Ins.jpg" alt="Imagem 4">
+          </div>
+          <div class="card">
+            <img src="image/linkedin.png" alt="Imagem 5">
+          </div>
+        </div>
+        
+        <button class="nav-btn" id="next-btn">seguinte</button>
+      </div>
+      
+
+    
+<script>
+  
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const carrossel = document.querySelector(".carrossel");
+  const cards = document.querySelectorAll(".card");
+  let cardIndex = Math.floor(cards.length / 2);
+
+  function atualizarCarrossel() {
+    carrossel.style.transform = `translateX(-${cardIndex * 33.33}%)`;
+    cards.forEach((card, index) => {
+      card.style.filter = index === cardIndex ? "none" : "blur(5px)";
+      card.classList.toggle("atual", index === cardIndex);
+    });
+  }
+
+  function moverCarrossel(direcao) {
+    if (direcao === "prev" && cardIndex > 0) {
+      cardIndex--;
+    } else if (direcao === "next" && cardIndex < cards.length - 1) {
+      cardIndex++;
+    }
+    atualizarCarrossel();
+  }
+
+  document.getElementById("prev-btn").addEventListener("click", () => moverCarrossel("prev"));
+  document.getElementById("next-btn").addEventListener("click", () => moverCarrossel("next"));
+
+  atualizarCarrossel();
+});
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -52,7 +52,7 @@
         </div>
         <div id="habilidades">
             <h3 class="m_h">Minhas habilidades</h3>
-            <div class="carousel">
+            <div>
                 <ul class="ul">
                     <div class="caixa_habi">
                         <li><img class="habilidade" src="image/html.jpg" nome="html"></li>
@@ -86,47 +86,90 @@
             </div>
         </div>
         <div id="projetos">
-            <div>
-                
-                <h3 class="texto_card">Meus Projetos</h3>
-                <button class="nav-btn" id="prev-btn">anterior</button>
-                <div class="carousel-wrapper">
-                    <div class="projeto">
-                        <div class="card_projeto">
-                            <div class="titulo_card">
-                                <h3>Meu Portifólio</h3>
-                                <a href="https://github.com/Presley14/meu-portifolio" target="_blank"><img class="redes" src="image/github.png"></a> 
-                            </div>
-                            <h3 class="tecnologias" >Tecnologias usadas</h3>
-                            <div class="lista_card">
-                                <p class="list">HTML</p>
-                                <p class="list">CSS</p> 
-                            </div>
-                        </div>
-                        <div class="card_projeto">
-                            <div class="titulo_card">
-                                <h3 >Lista de tarefas</h3>
-                                <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
-                            </div>
-                            <h3 class="tecnologias" >Tecnologias usadas</h3>
-                            <div class="lista_card">
-                                <p class="list">HTML</p>
-                                <p class="list">CSS</p>
-                                <p class="list">React</p>
-                                <p class="list">Node-JS</p>
-                                <p class="list">mySQL</p> 
-                            </div>
-                        </div>
-                        <div class="card_projeto">
-                            <div class="titulo_card">
-                                <h3>Próximos projetos...</h3>
-                                <br><br>
-                            </div>
-                            <h3 class="tecnologias" >...</h3>
-                        </div>
+            <h3 class="texto_card">Meus Projetos</h3>
+            <div class="carrossel">
+                <div class="card_projeto">
+                    <div class="titulo_card">
+                        <h3>Meu Portifólio</h3>
+                        <a href="https://github.com/Presley14/meu-portifolio" target="_blank"><img class="redes" src="image/github.png"></a> 
+                    </div>
+                    <h3 class="tecnologias" >Tecnologias usadas</h3>
+                    <div class="lista_card">
+                        <p class="list">HTML</p>
+                        <p class="list">CSS</p>
+                        <p class="list">JavaScript</p> 
                     </div>
                 </div>
-                <button class="nav-btn" id="next-btn">next</button>
+                <div class="card_projeto">
+                    <div class="titulo_card">
+                        <h3 >Lista de tarefas</h3>
+                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
+                    </div>
+                    <h3 class="tecnologias" >Tecnologias usadas</h3>
+                    <div class="lista_card">
+                        <p class="list">HTML</p>
+                        <p class="list">CSS</p>
+                        <p class="list">React</p>
+                        <p class="list">Node-JS</p>
+                        <p class="list">mySQL</p> 
+                    </div>
+                </div>
+
+                <div class="card_projeto">
+                    <div class="titulo_card">
+                        <h3 >Lista de tarefas</h3>
+                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
+                    </div>
+                    <h3 class="tecnologias" >Tecnologias usadas</h3>
+                    <div class="lista_card">
+                        <p class="list">HTML</p>
+                        <p class="list">CSS</p>
+                        <p class="list">React</p>
+                        <p class="list">Node-JS</p>
+                        <p class="list">mySQL</p> 
+                    </div>
+                </div>
+
+                <div class="card_projeto">
+                    <div class="titulo_card">
+                        <h3 >Lista de tarefas</h3>
+                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
+                    </div>
+                    <h3 class="tecnologias" >Tecnologias usadas</h3>
+                    <div class="lista_card">
+                        <p class="list">HTML</p>
+                        <p class="list">CSS</p>
+                        <p class="list">React</p>
+                        <p class="list">Node-JS</p>
+                        <p class="list">mySQL</p> 
+                    </div>
+                </div>
+                <div class="card_projeto">
+                    <div class="titulo_card">
+                        <h3 >Lista de tarefas</h3>
+                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
+                    </div>
+                    <h3 class="tecnologias" >Tecnologias usadas</h3>
+                    <div class="lista_card">
+                        <p class="list">HTML</p>
+                        <p class="list">CSS</p>
+                        <p class="list">React</p>
+                        <p class="list">Node-JS</p>
+                        <p class="list">mySQL</p> 
+                    </div>
+                </div>
+                
+                <div class="card_projeto">
+                    <div class="titulo_card">
+                        <h3>Próximos projetos...</h3>
+                        <br><br>
+                    </div>
+                    <h3 class="tecnologias" >...</h3>
+                </div>
+            </div>
+            <div class="btn">
+                <img class="direcao" id="anterior" src="image/esquerda.png" alt="">
+                <img class="direcao" id="proximo" src="image/direita.png" alt="">
             </div>
         </div>
         <div id="sobre">
@@ -185,36 +228,7 @@
     <footer id="footer">
         <p>&copy; Site criado por Presley Oliveira 2023.</p>
     </footer>
-    <script>
-        function menuClick(){
-            var menu = document.getElementById("menu");
-            var img_menu = document.getElementById("img_menu");
-            var img_x = document.getElementById("img_x");
-
-            if(menu.style.display == "none" || menu.style.display === ""){
-                menu.style.display = "block";
-                img_menu.style.display = "none";
-                img_x.style.display = "block";
-            } else {
-                menu.style.display = "none";
-                img_menu.style.display = "block";
-                img_x.style.display = "none";
-            }
-        }
-
-        const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-const projeto = document.querySelector('.projeto');
-
-prevBtn.addEventListener('click', () => {
-    projeto.scrollBy({ left: -300, behavior: 'smooth' }); // Ajuste conforme a largura do card
-});
-
-nextBtn.addEventListener('click', () => {
-    projeto.scrollBy({ left: 300, behavior: 'smooth' }); // Ajuste conforme a largura do card
-});
-
-
-    </script>
+    <script src="script/carrossel.js"></script>
+    <script src="script/menuHamburguer.js"></script>
 </body>
 </html>
