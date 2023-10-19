@@ -88,6 +88,9 @@
         padding: 15px 15px;
         font-family: 'Black Ops One', sans-serif;
         font-size: 22px;
+        text-decoration: none;
+        color: aliceblue;
+
       }
   /*  inicio */
 
@@ -218,11 +221,18 @@
   /* Projetos */
 
     #projetos{
-        position: relative;
-        max-width: 430px;
-        overflow: hidden;
+        
         scroll-margin-top: 4rem;
         margin: 30px 0;
+        background: radial-gradient(circle at center, #1f0c1f, #000000);
+  }
+
+  .container{
+    max-width: 430px;
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .carrossel{
@@ -235,6 +245,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    
+  }
+
+  .descricao_projeto{
+    display: flex;
+    background-color: #470047;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .descricao_projeto h3{
+    display: flex;
+    align-items: center;
   }
 
   .card_projeto{
@@ -242,18 +266,12 @@
     min-width: 100%;
     background: radial-gradient(circle at center, #1f0c1f, #000000);
   }
-  
 
-  
-  .card_projeto:hover{
+  .imagem_projetos{
+    width: 430px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
   }
-
-  
-    .redes{
-    }
-
-    .redes:hover{
-    }
 
     .card {
         flex: 0 0 100%;
@@ -271,8 +289,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    background-color: #8c009f;
   }
 
   .atual {
@@ -293,9 +309,7 @@
     padding: 10px;
     background-color: #e1a2ec;
     color: #000000;
-  }
-  
-  .tecnologias:hover{
+    cursor: pointer;
   }
   
   .lista_card{
@@ -315,16 +329,6 @@
   .tecnologias:hover ~ .lista_card {
     display: block;
     }
-    
-
-    .direcao {
-        /*position: absolute;
-        top: 25%;
-        transform: translateY(-50%);
-        z-index: 2;
-        width: 50px;
-        height: 50px;*/
-    }
 
     .btn{
         display: flex;
@@ -336,12 +340,14 @@
         left: 10px;
         height: 50px;
         width: 50px;
+        cursor: pointer;
     }
     
     #proximo {
         right: 10px;
         height: 50px;
         width: 50px;
+        cursor: pointer;
     }
 
 
@@ -403,7 +409,7 @@
     height: 40px;
     border-radius: 50%;
     margin-left: 20px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 0px rgb(242, 227, 227);
   }
 
   .rede{
@@ -418,10 +424,6 @@
     display: flex;
     text-align: center;
     justify-content: center;
-  }
-
-  #projetos{
-    scroll-margin-top: 4rem;
   }
 
   /* footer*/

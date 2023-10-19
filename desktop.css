@@ -63,13 +63,15 @@ nav{
   padding: 10px 25px;
   font-family: 'Black Ops One', sans-serif;
   font-size: 26px;
-
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .li{
   padding: 10px 25px;
   display: flex;
   justify-content: center;
+  font-size: 14px;
 }
 
 .li:hover{
@@ -187,8 +189,8 @@ a{
   }
 
   .habilidade {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 100%;
     display: block;
     margin: 20px 15px;
@@ -212,13 +214,14 @@ a{
   .label_habilidade{
     color: aliceblue;
     margin-top: 40px;
+    font-size: 14px;
   }
 
   .caixa_habi{
     display: block;
     margin: 0 5px;
-    width: 130px;
-    height: 130px;
+    width: 100px;
+    height: 100px;
   }
   
 /* sobre */
@@ -279,7 +282,7 @@ a{
     height: 40px;
     border-radius: 50%;
     margin-left: 20px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 0px rgb(247, 235, 235);
   }
 
   .rede{
@@ -311,77 +314,139 @@ a{
 /* Projetos */
 
 #projetos{
-  margin-top: 100px;
-  scroll-margin-top: 10rem;
+  
+  scroll-margin-top: 4rem;
+  margin: 30px 0;
   background: radial-gradient(circle at center, #1f0c1f, #000000);
-  height: 200px;
-  margin-bottom: 100px;
-  padding-bottom: 180px;
+  border-radius: 10px 10px 0 0;
 }
 
-.projeto{
-  display: flex;
-  justify-content: center;
-  margin: 10px 10px  100px 10px;
+.container{
+position: relative;
+overflow: hidden;
+max-width: 430px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.carrossel{
+display: flex;
+transition: transform 0.5s ease-in-out;
+margin: 30px 0;
 }
 
 .texto_card{
-  display: flex;
-  justify-content: center;
-  padding: 30px 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
 
 }
 
 .card_projeto{
-  margin: 0px 10px;
-  padding: 20px;
+width: 100%;
+min-width: 100%;
+background: radial-gradient(circle at center, #1f0c1f, #000000);
+border-radius: 10px 10px 0 0;
 }
 
-.card_projeto:hover{
-  box-shadow: 0px 0px 2px 0px rgb(255, 173, 72);
-  padding: 20px;
-  border-radius: 5px;
+.card {
+  flex: 0 0 100%;
+  margin: 0 10px;
+  position: relative;
+  
 }
 
-.titulo_card{
+.imagem_projetos{
+  width: 430px;
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+.descricao_projeto{
   display: flex;
-  background-color: #8c009f;
-  padding: 20px 30px;
-  border-radius: 5px 5px 0 0 ;
-  justify-content: center;
+  background-color: #470047;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.descricao_projeto h3{
+  display: flex;
   align-items: center;
 }
 
-.tecnologias{
-  background-color: #e1a2ec;
-  color: #000000;
-  padding: 5px 10px;
-  border-radius:  0 0 5px 5px;
+.card:not(.atual) {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
 }
 
-.tecnologias:hover{
-  background-color: #422244;
-  color: #f7f7f7;
-  border-radius: 0px;
+.titulo_card{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.atual {
+z-index: 1;
+}
+
+.titulo_card h3{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.tecnologias{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background-color: #e1a2ec;
+color: #000000;
+cursor: pointer;
 }
 
 .lista_card{
-  background-color: darkorange;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 0 0 5px 5px;
-  display: none;
-  box-shadow: 0px 0px 5px 0px rgb(255, 173, 72);
+padding: 10px;
+color: white;
+background-color: darkorange;
+display: none;
+margin-top: 10px;
+border-radius: 0px 0px 15px 15px;
+
 }
 
 .list{
-  color: #422244;
+padding: 10px 80px;
 }
 
 .tecnologias:hover ~ .lista_card {
-  display: block;
-  }
+display: block;
+}
 
+.btn{
+  display: flex;
+  position: relative;
+  top: 0px;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+#anterior {
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#proximo {
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
 
 }
 

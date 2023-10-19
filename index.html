@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presley Oliveira</title>
-    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
     <link rel="stylesheet" href="tablet.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (min-width:300px) and (max-width:728px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Carter+One&family=Slackey&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <a class="titulo_nav">PRESLEY OLIVEIRA</a>
+            <a href="#inicio" class="titulo_nav">PRESLEY OLIVEIRA</a>
             <img class="img" id="img_menu" onclick="menuClick()"  src="/image/menu.png" width="50px" height="50px" alt="Menu">
             <img class="img_x" id="img_x" onclick="menuClick()"  src="/image/outra_imagem.png" width="50px" height="50px" alt="Menu">
             <menu id="menu">
@@ -86,90 +86,57 @@
             </div>
         </div>
         <div id="projetos">
-            <h3 class="texto_card">Meus Projetos</h3>
-            <div class="carrossel">
-                <div class="card_projeto">
-                    <div class="titulo_card">
-                        <h3>Meu Portifólio</h3>
-                        <a href="https://github.com/Presley14/meu-portifolio" target="_blank"><img class="redes" src="image/github.png"></a> 
+            <div class="container">
+                <h3 class="texto_card">Meus Projetos</h3>
+                <div class="carrossel">
+                    <div class="card_projeto">
+                        <div class="titulo_card">
+                            <img src="image/todo.png" alt="Meu Portifólio" class="imagem_projetos">
+                        </div>
+                        <div class="descricao_projeto">
+                           <h3>Meu Portifólio</h3>
+                           <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a>
+                        </div>
+                        <h3 class="tecnologias" >Tecnologias usadas</h3>
+                        <div class="lista_card">
+                            <p class="list">HTML</p>
+                            <p class="list">CSS</p>
+                            <p class="list">JavaScript</p> 
+                        </div>
                     </div>
-                    <h3 class="tecnologias" >Tecnologias usadas</h3>
-                    <div class="lista_card">
-                        <p class="list">HTML</p>
-                        <p class="list">CSS</p>
-                        <p class="list">JavaScript</p> 
+                    <div class="card_projeto">
+                        <div class="titulo_card">
+                            <img src="image/portifolio.png" alt="Lista de tarefas" class="imagem_projetos">
+                        </div>
+                        <div class="descricao_projeto">
+                            <h3 >Lista de tarefas</h3>
+                            <a href="https://github.com/Presley14/meu-portifolio" target="_blank"><img class="redes" src="image/github.png"></a>
+                        </div>
+                        <h3 class="tecnologias" >Tecnologias usadas</h3>
+                        <div class="lista_card">
+                            <p class="list">React</p>
+                            <p class="list">Node-JS</p>
+                            <p class="list">mySQL</p>
+                            <p class="list">HTML</p>
+                            <p class="list">CSS</p>  
+                             
+                        </div>
                     </div>
-                </div>
-                <div class="card_projeto">
-                    <div class="titulo_card">
-                        <h3 >Lista de tarefas</h3>
-                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
-                    </div>
-                    <h3 class="tecnologias" >Tecnologias usadas</h3>
-                    <div class="lista_card">
-                        <p class="list">HTML</p>
-                        <p class="list">CSS</p>
-                        <p class="list">React</p>
-                        <p class="list">Node-JS</p>
-                        <p class="list">mySQL</p> 
-                    </div>
-                </div>
-
-                <div class="card_projeto">
-                    <div class="titulo_card">
-                        <h3 >Lista de tarefas</h3>
-                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
-                    </div>
-                    <h3 class="tecnologias" >Tecnologias usadas</h3>
-                    <div class="lista_card">
-                        <p class="list">HTML</p>
-                        <p class="list">CSS</p>
-                        <p class="list">React</p>
-                        <p class="list">Node-JS</p>
-                        <p class="list">mySQL</p> 
-                    </div>
-                </div>
-
-                <div class="card_projeto">
-                    <div class="titulo_card">
-                        <h3 >Lista de tarefas</h3>
-                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
-                    </div>
-                    <h3 class="tecnologias" >Tecnologias usadas</h3>
-                    <div class="lista_card">
-                        <p class="list">HTML</p>
-                        <p class="list">CSS</p>
-                        <p class="list">React</p>
-                        <p class="list">Node-JS</p>
-                        <p class="list">mySQL</p> 
+                    <div class="card_projeto">
+                        <div class="titulo_card">
+                            <img src="image/vazio.png" alt="Projeto vazio" class="imagem_projetos">
+                        </div>
+                        <div class="descricao_projeto">
+                            <h3>Próximos projetos...</h3>
+                            <br><br>
+                        </div>
+                        <h3 class="tecnologias" >...</h3>
                     </div>
                 </div>
-                <div class="card_projeto">
-                    <div class="titulo_card">
-                        <h3 >Lista de tarefas</h3>
-                        <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a> 
-                    </div>
-                    <h3 class="tecnologias" >Tecnologias usadas</h3>
-                    <div class="lista_card">
-                        <p class="list">HTML</p>
-                        <p class="list">CSS</p>
-                        <p class="list">React</p>
-                        <p class="list">Node-JS</p>
-                        <p class="list">mySQL</p> 
-                    </div>
+                <div class="btn">
+                    <img class="direcao" id="anterior" src="image/esquerda.png" alt="">
+                    <img class="direcao" id="proximo" src="image/direita.png" alt="">
                 </div>
-                
-                <div class="card_projeto">
-                    <div class="titulo_card">
-                        <h3>Próximos projetos...</h3>
-                        <br><br>
-                    </div>
-                    <h3 class="tecnologias" >...</h3>
-                </div>
-            </div>
-            <div class="btn">
-                <img class="direcao" id="anterior" src="image/esquerda.png" alt="">
-                <img class="direcao" id="proximo" src="image/direita.png" alt="">
             </div>
         </div>
         <div id="sobre">

@@ -28,24 +28,7 @@
           <div class="card">
             <img src="image/js.png" alt="Imagem 6">
           </div>
-          <div class="card">
-            <img src="image/mysql.jpg" alt="Imagem 7">
-          </div>
-          <div class="card">
-            <img src="image/css.jpg" alt="Imagem 1">
-          </div>
-          <div class="card">
-            <img src="image/git.jpg" alt="Imagem 2">
-          </div>
-          <div class="card">
-            <img src="image/html.jpg" alt="Imagem 3">
-          </div>
-          <div class="card">
-            <img src="image/Ins.jpg" alt="Imagem 4">
-          </div>
-          <div class="card">
-            <img src="image/linkedin.png" alt="Imagem 5">
-          </div>
+          
         </div>
         
         <button class="nav-btn" id="next-btn">seguinte</button>
@@ -63,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let cardIndex = Math.floor(cards.length / 2);
 
   function atualizarCarrossel() {
-    carrossel.style.transform = `translateX(-${cardIndex * 33.33}%)`;
+    carrossel.style.transform = `translateX(-${cardIndex * 100}%)`;
     cards.forEach((card, index) => {
       card.style.filter = index === cardIndex ? "none" : "blur(5px)";
       card.classList.toggle("atual", index === cardIndex);

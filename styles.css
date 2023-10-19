@@ -1,49 +1,49 @@
 .carrossel-container {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .carrossel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .card {
-    flex: 0 0 33.33%;
-    margin: 0 10px;
-    position: relative;
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .card:not(.atual) {
-    filter: blur(5px);
-    transition: filter 0.3s ease-in-out;
-  }
-  
-  .atual {
-    z-index: 1;
-  }
-
-  .nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 2;
-    width: 50px;
-    height: 50px;
-
+  position: relative;
+  max-width: 30%;
+  margin: auto;
+  overflow: hidden;
 }
 
-#prev-btn{
-    left: 10px;
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  flex: 100%; /* Ajuste da largura dos cards e do espaçamento entre eles */
+  margin: 0 10px;
+  position: relative;
+  box-sizing: border-box; /* Certifica-se de que a largura inclui a borda e o preenchimento */
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+
+.card:not(.atual) {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
+.atual {
+  z-index: 1;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+}
+
+#prev-btn {
+  left: 10px;
 }
 
 #next-btn {
-    right: 10px;
+  right: 10px;
 }
