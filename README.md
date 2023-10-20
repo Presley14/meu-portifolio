@@ -6,6 +6,7 @@ Bem-vindo ao meu portfólio! Este é um projeto pessoal que eu criei para mostra
 
 Este projeto é um site estático que apresenta uma coleção dos meus trabalhos e projetos. Foi desenvolvido utilizando apenas as  tecnologias:
 
+- JavaScript
 - HTML5
 - CSS3
 
