@@ -12,11 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 cards.forEach((card, index) => {
                     card.style.filter = index === cardIndex ? "none" : "blur(5px)"
                     card.classList.toggle("atual", index === cardIndex)
-                    
                 })
-        
-      
-      atualizarCarrossel()
     }
   
     function moverCarrossel(direcao) {
