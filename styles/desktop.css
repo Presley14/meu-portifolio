@@ -37,15 +37,37 @@ nav{
     flex-wrap: wrap;
 }
 
-.img{
-    display: none;
+.imagemmenu{
+  display: none;
 }
 
+#img_menu{
+    display: none;
+}
+.img{
+  display: none;
+}
+
+#img_x{
+  display: none;
+}
 .img_x{
   display: none;
 }
 
 .lista-menu{
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu.active .img_menu {
+  display: block;
+}
+
+.menu.active .img_x {
   display: none;
 }
 

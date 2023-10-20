@@ -14,15 +14,17 @@ function menuClick(){
         img_menu.style.display = "block"
         img_x.style.display = "none"
     }
-
-    
 }
 
 function sairMenu(){
     const menu = document.querySelector("#menu")
     menu.style.display = "none"
-    img_menu.style.display = "block"
-    img_x.style.display = "none"
+
+    const img_menu = document.querySelector("#img_menu")
+    const img_x = document.querySelector("#img_x")
+        img_x.style.display = "none"
+        img_menu.style.display = "block"
+    
 }
 
 
