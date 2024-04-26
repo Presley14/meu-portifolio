@@ -58,6 +58,14 @@
             <div>
                 <ul class="ul">
                     <div class="caixa_habi">
+                        <li><img class="habilidade" src="image/php.jpg" nome="php"></li>
+                        <label class="label_habilidade" for="php">PHP</label>
+                    </div>
+                    <div class="caixa_habi">
+                        <li><img class="habilidade" src="image/laravel.jpg" nome="laravel"></li>
+                        <label class="label_habilidade" for="laravel">Laravel</label>
+                    </div>
+                    <div class="caixa_habi">
                         <li><img class="habilidade" src="image/html.jpg" nome="html"></li>
                         <label class="label_habilidade" for="html">HTML</label>
                     </div>
@@ -94,17 +102,18 @@
                 <div class="carrossel">
                     <div class="card_projeto">
                         <div class="titulo_card">
-                            <img src="image/todo.png" alt="Lista de tarefas" class="imagem_projetos">
+                            <img src="image/listadetarefas.png" alt="Lista de tarefas" class="imagem_projetos">
                         </div>
                         <div class="descricao_projeto">
                            <h3>Lista de tarefas</h3>
-                           <a href="https://github.com/Presley14/listaTarefas" target="_blank"><img class="redes" src="image/github.png"></a>
+                           <a href="https://github.com/Presley14/gerenciadorTarefas" target="_blank"><img class="redes" src="image/github.png"></a>
                         </div>
                         <h3 class="tecnologias" >Tecnologias usadas</h3>
                         <div class="lista_card">
-                            <p class="list">React</p>
-                            <p class="list">Node-JS</p>
+                            <p class="list">Laravel</p>
+                            <p class="list">PHP</p>
                             <p class="list">mySQL</p>
+                            <p class="list">JavaScript</p>
                             <p class="list">HTML</p>
                             <p class="list">CSS</p>  
                         </div>
@@ -119,9 +128,9 @@
                         </div>
                         <h3 class="tecnologias" >Tecnologias usadas</h3>
                         <div class="lista_card">
+                            <p class="list">JavaScript</p>
                             <p class="list">HTML</p>
                             <p class="list">CSS</p>
-                            <p class="list">JavaScript</p>
                         </div>
                     </div>
                     <div class="card_projeto">
@@ -130,14 +139,11 @@
                         </div>
                         <div class="descricao_projeto">
                             <h3>Próximos projetos...</h3>
+                            <a href="" target="_blank"><img class="redes" src="image/github.png"></a>
                             <br><br>
                         </div>
                         <h3 class="tecnologias" >...</h3>
                     </div>
-                </div>
-                <div class="btn">
-                    <img class="direcao" id="anterior" src="image/esquerda.png" alt="">
-                    <img class="direcao" id="proximo" src="image/direita.png" alt="">
                 </div>
             </div>
         </div>
@@ -146,18 +152,18 @@
                 <h3>Sobre mim.</h3>
                 <p class="paragrafo">&nbsp;&nbsp;
                     Oi, meu nome é <strong>Elvis Presley</strong>, faço bacharelado em Engenharia de Software. Sou um entusiasta da 
-                    programação com habilidades e experiência nas tecnologias <strong>HTML, CSS, JavaScript, React, 
+                    programação com habilidades e experiência nas tecnologias <strong>PHP, Laravel, JavaScript, HTML, CSS, React, 
                     Node-JS, mySQL.</strong>
                 </p>
                 <p class="paragrafo">&nbsp;&nbsp;
                     Desde que descobri minha paixão pela programação, tenho me dedicado intensamente ao 
                     aprendizado e ao desenvolvimento de projetos pessoais. Utilizando minha <strong>criatividade e pensamento lógico</strong>, 
                     criei aplicações web <strong>interativas e responsivas</strong>, explorando 
-                    diferentes frameworks e bibliotecas front-end.
+                    diferentes frameworks e bibliotecas back-end e front-end.
                 </p>
                 <p class="paragrafo">&nbsp;&nbsp;
-                    Além do meu foco em <strong>front-end</strong>, também me envolvo no desenvolvimento <strong>back-end</strong>, utilizando 
-                    linguagens como <strong>Node-JS e mySQL</strong>. Essa experiência me permitiu entender a importância da 
+                    Além do meu foco em <strong>back-end</strong>, também me envolvo no desenvolvimento <strong>front-end</strong>, utilizando 
+                    linguagens como <strong>JavaScript, HTML, CSS, React</strong>. Essa experiência me permitiu entender a importância da 
                     interação entre o front-end e o back-end para criar soluções web <strong>completas e eficientes.</strong>
                 </p>
                 <p class="paragrafo">&nbsp;&nbsp;
@@ -173,8 +179,8 @@
                     
                 </p>
                 <p class="paragrafo">&nbsp;&nbsp;
-                    Estou ansioso para dar continuidade à minha carreira como <strong>programador front-end e 
-                    back-end</strong>, contribuindo com minha <strong>paixão pela programação e minha sede de conhecimento. </strong>
+                    Estou ansioso para dar continuidade à minha carreira como <strong>programador back-end e front-end 
+                    </strong>, contribuindo com minha <strong>paixão pela programação e minha sede de conhecimento. </strong>
                     Se você estiver interessado em trabalhar comigo ou tiver alguma pergunta, sinta-se à 
                     vontade para entrar em contato. Estou animado para compartilhar minhas ideias e 
                     contribuir para o sucesso dos seus projetos!
@@ -194,9 +200,10 @@
         </div>
     </main>
     <footer id="footer">
-        <p>&copy; Site criado por Presley Oliveira 2023.</p>
+        <p>&copy; <span id="ano"></span> Site criado por Presley Oliveira.</p>
     </footer>
     <script src="script/carrossel.js"></script>
     <script src="script/menuHamburguer.js"></script>
+    <script src="script/data.js"></script>
 </body>
 </html>

@@ -224,172 +224,81 @@
 
   /* Projetos */
 
-    #projetos{
-        
-        scroll-margin-top: 4rem;
-        margin: 30px 0;
-        background: radial-gradient(circle at center, #1f0c1f, #000000);
+  #projetos{
+    padding: 20px;
+    scroll-margin-top: 4rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: radial-gradient(circle at center, #8c009f, #000000);
+    scroll-margin-top: 10rem;
+    
   }
-
-  .container{
-    max-width: 350px;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  
   .carrossel{
     display: flex;
-    transition: transform 0.5s ease-in-out;
-    margin: 30px 0;
-  }
-  
-  .texto_card{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    
-  }
-
-  .descricao_projeto{
-    display: flex;
-    background-color: #470047;
-    justify-content: space-around;
-    padding: 10px 0;
+    flex-wrap: wrap;
   }
   
-  .descricao_projeto h3{
-    display: flex;
-    align-items: center;
-  }
-
   .card_projeto{
-    width: 100%;
-    min-width: 100%;
-    background: radial-gradient(circle at center, #1f0c1f, #000000);
-  }
-
-  .imagem_projetos{
-    width: 350px;
-    height: 250px;
-    border-radius: 10px 10px 0 0;
-  }
-
-    .card {
-        flex: 0 0 100%;
-        margin: 0 10px;
-        position: relative;
-        
-      }
-
-    .card:not(.atual) {
-        filter: blur(5px);
-        transition: filter 0.3s ease-in-out;
-    }
-
-  .titulo_card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .atual {
-    z-index: 1;
-  }
-
-  .titulo_card h3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-
-  .tecnologias{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    background-color: #e1a2ec;
-    color: #000000;
-    cursor: pointer;
-  }
-  
-  .lista_card{
-    padding: 10px;
-    color: white;
-    background-color: darkorange;
-    display: none;
-    margin-top: 10px;
-    border-radius: 0px 0px 15px 15px;
-    
-  }
-  
-  .list{
-    padding: 10px 80px;
-  }
-  
-  .tecnologias:hover ~ .lista_card {
-    display: block;
-    }
-
-    .btn{
-        display: flex;
-        justify-content: space-between;
-        transform: translateY(-50%);
-    }
-
-    #anterior {
-        left: 10px;
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-    }
-    
-    #proximo {
-        right: 10px;
-        height: 50px;
-        width: 50px;
-        cursor: pointer;
-    }
-
-
-    /* sobre */
-
-  #sobre{
-    display: block;
-    text-align: justify;
     width: 90%;
-    margin: auto;
-    left: auto;
-    background-color: #e1a2ec;
-    padding: 15px;
-    border-radius: 15px;
-    color: #000000;
-    scroll-margin-top: 5rem;
-  }
-
-  .mim{
-    background-color: #e1a2ec;
-    width: 95%;
-    margin: auto;
-    left: auto;
-
-  }
-
-  .paragrafo{
-    margin-top: 20px;
-    font-size: 14px;
-  }
-
-  .assinado{
-    display: flex;
-    text-align: center;
-    justify-content: right;
-    margin-top: 20px;
-    font-size: 14px;
-  }
+    margin: 10px;
+    border-radius: 5px;
+    }
+  
+    .descricao_projeto{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #8c009f;
+      padding: 5px;
+    }
+  
+    .imagem_projetos{
+      width: 100%;
+      height: 200px;
+      display: flex;
+      border-radius: 5px 5px 0 0;
+    }
+  
+    .titulo_card:hover .imagem_projetos{
+      transform: scale(1.3);
+      transition: transform 0.5s ease;
+    }
+  
+    .titulo_card{
+      display: inline-block;
+      overflow: hidden;
+      display: flex;
+    }
+  
+    .tecnologias{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      background-color: #e1a2ec;
+      padding: 5px;
+    }
+  
+    .lista_card{
+      display: none;
+    }
+  
+    .tecnologias:hover + .lista_card{
+      display: block;
+      box-shadow: 0px 0px 5px 0px rgb(72, 72, 72);
+      background-color: darkorange;
+      padding-left: 20px;
+      padding: 10px;
+    }
+  
+    .texto_card{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+    }
 
   /* contatos */
 
@@ -430,6 +339,42 @@
     justify-content: center;
   }
 
+  /* sobre*/
+
+  #sobre{
+    display: block;
+    text-align: justify;
+    width: 85%;
+    margin: auto;
+    left: auto;
+    background-color: #e1a2ec;
+    padding: 25px;
+    border-radius: 15px;
+    color: #000000;
+    scroll-margin-top: 5rem;
+  }
+
+  .mim{
+    background-color: #e1a2ec;
+    width: 90%;
+    margin: auto;
+    left: auto;
+
+  }
+
+  .paragrafo{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .assinado{
+    display: flex;
+    text-align: center;
+    justify-content: right;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
   /* footer*/
 
   #footer{
