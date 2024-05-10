@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-Bem-vindo ao meu portfólio! Este é um projeto pessoal que eu criei para mostrar algumas das minhas habilidades em desenvolvimento web, utilizando HTML, CSS, JavaScript, React, Node.js e mySQL.
+Bem-vindo ao meu portfólio! Este é um projeto pessoal que eu criei para mostrar algumas das minhas habilidades em desenvolvimento web.
 
 ## Visão Geral
 
